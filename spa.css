@@ -278,3 +278,58 @@ button:focus{
 }
 
 
+@media(max-width:390px){
+    .worker-grid-wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .staff-wrapper>div{
+        display: flex;
+        justify-content: center;
+        text-align: center !important;
+    }
+
+    .navbar button{
+        display: none;
+    }
+}
+
+
+.staff{
+    width: 100%;
+}
+
+.staff img{
+    width: 100%;
+}
+
+.staff-wrapper{
+    padding: 0 15px 0 15px;
+}
+
+.staff-wrapper>div{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+
+.bio-btn button{
+    width: 50%;
+    height: 45px;
+    border-radius: 40px;
+    background-color: white;
+    cursor: pointer;
+    border: solid green 1px;
+    transition: all .50s ;
+}
+
+.bio-btn button:hover{
+    background-color: var(--hover);
+    color: black;
+}
+
