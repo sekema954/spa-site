@@ -98,7 +98,29 @@ button:focus{
     height: 0;
     background-color: var(--hover);
     transition: all .50s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.link-wrapper li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+    transition: all .50s;
+}
+
+.link-wrapper li a:hover{
+    text-decoration: underline green 2px;
+}
+
+.link-wrapper li{
+    list-style: none;
+    margin: 20px;
+    
+}
+
 
 .changeHeight{
     height: 300px;
@@ -301,6 +323,7 @@ button:focus{
 
 .staff{
     width: 100%;
+    height: 100vh;
 }
 
 .staff img{
@@ -332,4 +355,6 @@ button:focus{
     background-color: var(--hover);
     color: black;
 }
+
+
 
