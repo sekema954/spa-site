@@ -278,7 +278,7 @@ button:focus{
 }
 
 
-@media(max-width:390px){
+@media(max-width:474px){
     .worker-grid-wrapper{
         width: 100%;
         display: grid;
