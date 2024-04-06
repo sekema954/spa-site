@@ -258,7 +258,7 @@ button:focus{
     background: inherit;
     z-index: -1;
     bottom: 0;
-    transform-origin: bottom left;
+    transform-origin: left bottom;
     transform: skewY(2deg);
 }
 
@@ -323,7 +323,6 @@ button:focus{
 
 .staff{
     width: 100%;
-    height: 100vh;
 }
 
 .staff img{
@@ -358,3 +357,92 @@ button:focus{
 
 
 
+
+/****sports massage****/
+#sports-massage{
+    padding: 0 10px 0 10px;
+    width: 100%;
+    position: relative;
+    top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+
+@media(max-width:738px){
+    #sports-massage{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .tissue-massage-img{
+        grid-row-start: 1;
+    }
+ 
+
+
+   
+}
+.sports-massage-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.about-sports-massage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sports-title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.sports-title h1{
+    font-size: 50px;
+    color: green;
+}
+
+
+.sports-massage-content{
+    padding: 0 20px 0 10px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.sports-massage-content p{
+    font-size: 20px;
+}
+
+
+.sports-massage-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.sports-massage-btn button{
+    height: 50px;
+    width: 230px;
+    border-radius: 50px;
+    border: solid black;
+    background-color: white;
+    cursor: pointer;
+    transition: all .50s;
+}
+
+
+.sports-massage-btn button:hover{
+    background-color: var(--hover);
+}
+
+
+
+.tissue-massage{
+    margin-top: 20px;
+}
