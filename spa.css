@@ -343,6 +343,7 @@ button:focus{
 .bio-btn button{
     width: 50%;
     height: 45px;
+    margin-top: 8%;
     border-radius: 40px;
     background-color: white;
     cursor: pointer;
@@ -379,17 +380,16 @@ button:focus{
 
     .tissue-massage-img{
         grid-row-start: 1;
-    }
- 
-
-
-   
+    } 
 }
+
+
 .sports-massage-img img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
+
 
 .about-sports-massage{
     display: flex;
@@ -424,6 +424,7 @@ button:focus{
 .sports-massage-btn{
     display: flex;
     justify-content: center;
+    margin-top: 4%;
 }
 
 .sports-massage-btn button{
@@ -454,11 +455,15 @@ button:focus{
 
 #testimonials{
     width: 100%;
+    margin-top: 10%;
     position: relative;
     top: 60px;
     background-color: rgb(73, 123, 73);
     color: white;
 }
+
+
+
 .testimonials-title-wrapper>div{
     display: flex;
     justify-content: center;
@@ -497,6 +502,12 @@ button:focus{
     box-shadow: 2px 2px 2px 2px white;
     border-radius: 10px;
     display: inline-block;
+}
+
+@media(max-width:411px){
+    .testimonial-card{
+        width: 350px;
+    }
 }
 
 
@@ -552,4 +563,9 @@ button:focus{
     background-color: black;
     color: white;
 }
+
+
+
+/****blog section****/
+
 
