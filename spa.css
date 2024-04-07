@@ -483,12 +483,14 @@ button:focus{
 
 
 
-.testimonial-overflow-box {
+.testimonial-overflow-box, 
+.blog-overflow-box {
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
 }
 
-.testimonial-overflow-box::-webkit-scrollbar {
+.testimonial-overflow-box::-webkit-scrollbar, 
+.blog-overflow-box::-webkit-scrollbar{
     display: none;
 }
 
@@ -564,8 +566,95 @@ button:focus{
     color: white;
 }
 
+.slider-radio{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.slider-radio input{
+    margin: 5px;
+    cursor: none;
+}
+
+
+
 
 
 /****blog section****/
 
 
+#blog{
+    width: 100%;
+    margin-top: 60px;
+    padding: 0 20px 0 20px;
+}
+
+.blog-title-wrapper>div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.blog-caret-slider{
+    float: right;
+}
+
+.blog-caret-slider .fa{
+    font-size: 30px;
+    margin: 5px;
+    color: black;
+    border: solid black;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all .50s;
+}
+
+.blog-caret-slider .fa:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.blog-overflow-box{
+    width: 100%;
+    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 0 10px 0 10px;
+    color: white;
+    background-color: rgb(73, 123, 73);
+    scroll-behavior: smooth;
+
+}
+
+.blog-card{
+    width: 400px;
+    padding: 0 10px 0 10px;
+    border: solid white 1px;
+}
+
+.blog-img{
+    width: 100%;
+    height: 300px;
+}
+
+.blog-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.blog-date p{
+    color: ghostwhite;
+    font-weight: 900;
+}
