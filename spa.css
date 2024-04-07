@@ -473,7 +473,9 @@ button:focus{
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
     gap: 30px;
+    scroll-behavior: smooth;
 }
+
 
 
 .testimonial-overflow-box {
@@ -489,7 +491,7 @@ button:focus{
 .testimonial-card{
     background-color: white;
     color: black;
-    width: 500px;
+    width: 400px;
     padding: 0 0 0 10px;
     border: solid white;
     box-shadow: 2px 2px 2px 2px white;

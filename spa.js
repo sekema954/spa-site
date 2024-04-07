@@ -10,3 +10,17 @@ menuBar.addEventListener("click", ()=>{
 
 
 /***testimonials */
+const rightArrow = document.querySelector(".fa-arrow-right");
+const leftArrow = document.querySelector(".fa-arrow-left");
+
+
+rightArrow.addEventListener("click", ()=>{
+  const overflowBox = document.querySelector(".testimonial-overflow-box");
+  overflowBox.scrollLeft += 430;
+})
+
+
+leftArrow.addEventListener("click", ()=>{
+  const overflowBox = document.querySelector(".testimonial-overflow-box");
+  overflowBox.scrollLeft -= 430;
+})
