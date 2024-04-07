@@ -446,3 +446,108 @@ button:focus{
 .tissue-massage{
     margin-top: 20px;
 }
+
+
+
+
+/****testimonials*****/
+
+#testimonials{
+    width: 100%;
+    position: relative;
+    top: 60px;
+    background-color: rgb(73, 123, 73);
+    color: white;
+}
+.testimonials-title-wrapper>div{
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-overflow-box{
+    width: 100%;
+    padding: 0 10px 0 10px;
+    overflow-x: auto; 
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    gap: 30px;
+}
+
+
+.testimonial-overflow-box {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+
+.testimonial-overflow-box::-webkit-scrollbar {
+    display: none;
+}
+
+
+.testimonial-card{
+    background-color: white;
+    color: black;
+    width: 500px;
+    padding: 0 0 0 10px;
+    border: solid white;
+    box-shadow: 2px 2px 2px 2px white;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+
+.rating-stars span{
+    font-size: 25px;
+}
+
+.no-color{
+    color: grey;
+}
+.yellow{
+    color: yellow;
+}
+
+.rating-user .fa{
+    border: solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.rating-title p{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.arrow-btns{
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-btns .fa{
+    margin: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .50s;
+}
+
+.arrow-btns .fa:hover{
+    background-color: black;
+    color: white;
+}
+
