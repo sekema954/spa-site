@@ -642,7 +642,7 @@ button:focus{
 }
 
 .blog-card{
-    width: 400px;
+    width: 380px;
     padding: 0 10px 0 10px;
     border: solid white 1px;
 }
@@ -662,3 +662,154 @@ button:focus{
     color: ghostwhite;
     font-weight: 900;
 }
+
+
+/****contact hours****/
+
+#contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+.contact-grid>div{
+    text-align: center; 
+}
+
+
+.contact-grid h1{
+    color: green;
+}
+
+
+
+/****contact section***/
+
+#contact-section{
+    width: 100%;
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    color: white;
+    padding: 0 20px 0 20px;
+}
+
+@media(max-width: 975px){
+    #contact-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .contact-lottie iframe{
+        width: 250px !important;
+        height: 250px !important;
+    } 
+}
+
+.contact-lottie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-section iframe{
+    border: none;
+    width: 500px;
+    height: 500px;
+}
+
+.contact-title{
+    margin-top: 60px;
+    padding-left: 20px;
+}
+
+#contact-section input{
+    width: 220px;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid white;
+    padding-left: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+#contact-section input::placeholder, #contact-section textarea::placeholder{
+    color: white;
+}
+
+#contact-section input:focus, #contact-section textarea:focus{
+    outline: none;
+}
+
+#contact-section textarea{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: transparent;
+    border: solid white;
+    color: white;
+    font-weight: 700;
+}
+
+#contact-form>div{
+    margin: 20px;
+}
+
+#contact-section input[type=submit]{
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 0;
+    padding: 0;
+    transition: all .50s;
+}
+
+
+#contact-section input[type=submit]:hover{
+    background-color: var(--hover);
+    color: white;
+}
+
+
+/***copyright section****/
+
+#copyright{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 5px 20px;
+}
+
+
+#copyright .social-links{
+    display: inline-block !important;
+}
+.watermark{
+    color: white;
+}
+
+#copyright .logo{
+    color: white;
+}
+
+
+
