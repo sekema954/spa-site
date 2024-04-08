@@ -339,6 +339,10 @@ button:focus{
     text-align: left;
 }
 
+.position{
+    text-align: center !important;
+}
+
 
 .bio-btn button{
     width: 50%;
