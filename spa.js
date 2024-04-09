@@ -2,9 +2,11 @@
 //MENUBAR ANIMATION
 const menuBar = document.getElementById("menubar");
 const dropdown = document.querySelector(".blank-canvas");
+const linkWrapper = document.querySelector(".link-wrapper");
 menuBar.addEventListener("click", ()=>{
   menuBar.classList.toggle("change");
   dropdown.classList.toggle("changeHeight");
+  linkWrapper.classList.toggle("show-link-wrapper");
 })
 
 
