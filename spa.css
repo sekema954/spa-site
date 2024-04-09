@@ -670,7 +670,7 @@ button:focus{
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;padding: 0 20px 0 20px;
 }
 
 .contact-grid{
@@ -679,6 +679,17 @@ button:focus{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     gap: 10px;
+}
+
+@media(max-width: 533px) {
+    .contact-grid{
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
 }
 
 .contact-grid>div{
