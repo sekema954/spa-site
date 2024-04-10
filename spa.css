@@ -815,12 +815,15 @@ button:focus{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     padding: 0 20px 5px 20px;
 }
 
 
-#copyright .social-links{
+#copyright{
     display: inline-block !important;
+    display: flex;
+    justify-content: space-between;
 }
 .watermark{
     color: white;
@@ -1140,3 +1143,60 @@ button:focus{
   }
 
 
+
+
+#location-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.location-page-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    padding: 0 20px 0 20px;
+}
+
+@media(max-width: 812px){
+    .location-page-grid{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px 0 20px;
+    }
+}
+
+.location-page-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe{
+    width: 100%;
+}
+
+.location-title h1{
+    font-weight: 900;
+    animation: slide-in 2s;
+    -moz-animation: slide-in 2s;
+    -o-animation: slide-in 2s;
+    -webkit-animation: slide in 2s;
+    animation-fill-mode: forwards; 
+}
+
+
+.location-address{
+    animation: slide-in 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    -moz-animation: slide-in 2s;
+    -o-animation: slide-in 2s;
+    -webkit-animation: slide in 2s;
+    animation-fill-mode: forwards;
+}
