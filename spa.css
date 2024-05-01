@@ -26,12 +26,15 @@ button:focus{
 .navbar{
     width: 100%;
     display: flex;
+    position: fixed !important;
     justify-content: space-between;
     align-items: center;
     padding: 0 15px 0 15px;
     white-space: nowrap;
     background-color: green;
     color: white;
+    z-index: 3000;
+    position: absolute;
 }
 
 
@@ -41,6 +44,14 @@ button:focus{
     }
 }
 
+.navbar h1{
+    font-family: cursive;
+}
+
+.navbar span{
+    color: white;
+    font-size: 17px;
+}
 
 .navbar button{
     width: 201px;
@@ -101,6 +112,10 @@ button:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    z-index: 2000;
+    margin-top: 50px;
+
 }
 
 .link-wrapper{
@@ -352,8 +367,13 @@ button:focus{
 }
 
 
-.bio-btn button{
-    width: 50%;
+.bio-button a{
+    text-decoration: none;
+}
+
+
+.bio-button{
+    width: 250px;
     height: 45px;
     margin-top: 8%;
     border-radius: 40px;
@@ -363,7 +383,7 @@ button:focus{
     transition: all .50s ;
 }
 
-.bio-btn button:hover{
+.bio-button:hover{
     background-color: var(--hover);
     color: black;
 }
@@ -1199,4 +1219,97 @@ iframe{
     -o-animation: slide-in 2s;
     -webkit-animation: slide in 2s;
     animation-fill-mode: forwards;
+}
+
+
+/****bio container****/
+
+.bio-container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+@media(max-width:864px){
+    .bio-container{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .staff-icon{
+        margin-top: 50px;
+    }
+}
+
+.staff-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff-context{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+
+
+
+.tabs-bar li{
+    display: inline-block;
+    list-style: none;
+    margin: 6px;
+}
+
+.tabs-bar li button{
+    width: 130px;
+    height: 35px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .50s;
+}
+
+@media(max-width:651px){
+    .tabs-bar li button{
+        width: 90px;
+        height: 25px;
+        font-size: 10px;
+    }
+}
+
+
+.tabs-context{
+    width: 100%;
+    box-shadow: 3px 3px 3px 5px grey;
+    padding: 20px;
+    display: none !important;
+}
+
+
+.tabs-wrapper{
+    width: 100%;
+}
+
+
+.tab-title{
+    color: green;
+}
+
+.changeColor{
+    background-color: var(--hover) !important;
+    color: black !important;
+}
+
+
+.showCard{
+    display: inline-block !important;
 }

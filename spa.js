@@ -44,3 +44,6 @@ rightCaret.addEventListener("click", ()=> {
   const blogDiv = document.querySelector('.blog-overflow-box');
   blogDiv.scrollLeft += 400;
 });
+
+
+
