@@ -115,7 +115,6 @@ button:focus{
     position: fixed;
     z-index: 2000;
     margin-top: 50px;
-
 }
 
 .link-wrapper{
@@ -1225,7 +1224,7 @@ iframe{
 /****bio container****/
 
 .bio-container{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1251,6 +1250,10 @@ iframe{
     align-items: center;
 }
 
+.staff-icon img{
+    width: 100%;
+}
+
 .staff-context{
     width: 100%;
     display: flex;
@@ -1259,7 +1262,9 @@ iframe{
     padding: 0 20px 0 20px;
 }
 
-
+.tabs-bar{
+    white-space: nowrap;
+}
 
 .tabs-bar li{
     display: inline-block;
