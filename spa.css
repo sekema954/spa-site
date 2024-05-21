@@ -17,6 +17,11 @@ button:focus{
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
 #container{
     max-width: 100vw;
     height: 100vh;
@@ -857,8 +862,8 @@ button:focus{
 
 /***PRICING SECTION PAGE****/
 #pricing-header{
+    min-height: 50%;
     width: 100%;
-    height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1165,7 +1170,8 @@ button:focus{
 
 
 #location-page{
-    width: 100%;
+    min-height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
